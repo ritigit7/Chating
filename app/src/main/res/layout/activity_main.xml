@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="273dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter message here" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="126dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="-17dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/messageEditText"
+        android:text="Send" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/messageEditText"
+        android:layout_below="@id/topLayout"
+        android:id="@+id/scrollView">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#FFFFFF" />
+
+    </ScrollView>
+
+    <!-- Add a top layout to hold the title or any other components you want to add above the message area -->
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="16dp">
+
+        <!-- Add your title or other components here -->
+
+    </RelativeLayout>
+
+</RelativeLayout>
